@@ -1,12 +1,13 @@
 package productoidra.model;
 
 public class Producto {
-
+    //Aplica encapsulamiento al ser atributo privado
     protected String nombre; //nombre del producto
     protected float precio;
     protected long codigoBarra;
     protected String categoria;
 
+    //Constructores
     /*
     public Producto() {
         this.nombre = "";
@@ -15,15 +16,25 @@ public class Producto {
         this.codigoBarra = 001L;
     }
      */
+    //Permite crear un objeto Producto pasando solo el nombre
     public Producto(String nombre) {
         this.nombre = nombre;
     }
-
+    //Permite crear un objeto Producto con nombre y precio
     public Producto(String nombre, float precio) {
         this.nombre = nombre;
         this.precio = precio;
     }
-
+    //Constructor completo
+    public Producto(String nombre, float precio, long codigoBarra, String categoria) {
+    this.nombre = nombre;
+    this.precio = precio;
+    this.codigoBarra = codigoBarra;
+    this.categoria = categoria;
+    }
+    
+    //Getter y Setter
+    //Permiten acceder y modificar los atributos encapsulados
     public String getNombre() {
         return this.nombre;
     }
