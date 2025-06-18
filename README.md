@@ -63,6 +63,7 @@ public boolean equals(Object obj) {
 🗂️ Estructura del Proyecto
 perl
 Copiar código
+```
 herencia-equals-toString-/
 ├── nbproject/               # Archivos de configuración de NetBeans
 ├── src/
@@ -73,6 +74,7 @@ herencia-equals-toString-/
 ├── build.xml                # Script de construcción de NetBeans
 ├── manifest.mf              # Archivo de manifiesto
 └── README.md                # Documentación del proyecto
+```
 🚀 Ejecución del Proyecto
 Clonar el repositorio:
 
