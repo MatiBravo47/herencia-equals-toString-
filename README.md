@@ -1,4 +1,5 @@
-# 📘 herencia-equals-toString-
+# 📘 oop-inventory-demo
+
 
 Este proyecto en Java, desarrollado en NetBeans, tiene como objetivo demostrar los principios fundamentales de la Programación Orientada a Objetos (POO), enfocándose en:
 
@@ -80,7 +81,7 @@ Clonar el repositorio:
 
 bash
 Copiar código
-git clone https://github.com/MatiBravo47/herencia-equals-toString-.git
+git clone https://github.com/MatiBravo47/oop-inventory-demo.git
 Abrir en NetBeans:
 
 Iniciar NetBeans.
