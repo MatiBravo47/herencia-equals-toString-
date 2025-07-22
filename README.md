@@ -26,7 +26,6 @@ public class ProductoImportado extends Producto {
 El encapsulamiento restringe el acceso directo a los atributos de una clase, protegiendo la integridad de los datos. Se logra mediante modificadores de acceso (private, protected, public) y el uso de métodos getters y setters.
 
 ```java
-Copiar código
 private String nombre;
 
 public String getNombre() {
@@ -42,7 +41,6 @@ toString()
 El método toString() proporciona una representación en forma de cadena de un objeto. Sobrescribir este método facilita la visualización del estado del objeto.
 
 ```java
-Copiar código
 @Override
 public String toString() {
     return "Producto: " + nombre + ", Precio: " + precio;
@@ -52,7 +50,6 @@ equals()
 El método equals() compara el contenido de dos objetos para determinar si son equivalentes. Es importante sobrescribir este método para definir criterios de igualdad específicos.
 
 ```java
-Copiar código
 @Override
 public boolean equals(Object obj) {
     if (this == obj) return true;
@@ -63,7 +60,6 @@ public boolean equals(Object obj) {
 ```
 🗂️ Estructura del Proyecto
 perl
-Copiar código
 ```
 herencia-equals-toString-/
 ├── nbproject/               # Archivos de configuración de NetBeans
