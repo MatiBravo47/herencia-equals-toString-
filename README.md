@@ -73,11 +73,12 @@ herencia-equals-toString-/
 └── README.md                # Documentación del proyecto
 ```
 🚀 Ejecución del Proyecto
-Clonar el repositorio:
 
-bash
-Copiar código
+Clonar el repositorio:
+```
 git clone https://github.com/MatiBravo47/oop-inventory-demo.git
+```
+
 Abrir en NetBeans:
 
 Iniciar NetBeans.
