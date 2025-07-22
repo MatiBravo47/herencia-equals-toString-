@@ -19,16 +19,9 @@ public class ProductoConVencimiento extends Producto {
     }
 
     public void setFechaVencimiento(LocalDate fecha) {
-        //variable fechaVencimiento??
         this.fechaVencimiento = fecha;
     }
 
-    @Override
-    public void mostrarProducto() {
-        super.mostrarProducto(); //se ejecuta siempre primero
-        System.out.println("Fecha de vencimiento: " + this.fechaVencimiento);
-    }
-    
     @Override
     public String toString() {
         return "ProductoConVencimiento {" +

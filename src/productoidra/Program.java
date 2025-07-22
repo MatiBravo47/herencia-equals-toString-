@@ -11,8 +11,8 @@ public class Program {
         Scanner scn = new Scanner(System.in);
         
         
-        Producto p1 = new Producto("Coca Cola chica"); //Instanciamos el Producto
-        p1.setNombre("Coca Cola 1.5L"); //Asignamos un valor al nombre
+        Producto p1 = new Producto("Coca Cola chica");
+        p1.setNombre("Coca Cola 1.5L");
         p1.setPrecio(2999.99f);
         p1.setCodigoBarra(1240917234987132984L);
         p1.setCategoria("Coca Cola");

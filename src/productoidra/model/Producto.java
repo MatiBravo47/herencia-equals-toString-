@@ -1,26 +1,16 @@
 package productoidra.model;
 
 public class Producto {
-    //Aplica encapsulamiento al ser atributo privado
-    protected String nombre; //nombre del producto
+
+    protected String nombre; 
     protected float precio;
     protected long codigoBarra;
     protected String categoria;
 
-    //Constructores
-    /*
-    public Producto() {
-        this.nombre = "";
-        this.categoria = "";
-        this.precio = 0.0f;
-        this.codigoBarra = 001L;
-    }
-     */
-    //Permite crear un objeto Producto pasando solo el nombre
     public Producto(String nombre) {
         this.nombre = nombre;
     }
-    //Permite crear un objeto Producto con nombre y precio
+
     public Producto(String nombre, float precio) {
         this.nombre = nombre;
         this.precio = precio;
@@ -33,8 +23,6 @@ public class Producto {
     this.categoria = categoria;
     }
     
-    //Getter y Setter
-    //Permiten acceder y modificar los atributos encapsulados
     public String getNombre() {
         return this.nombre;
     }
@@ -73,14 +61,6 @@ public class Producto {
         this.codigoBarra = codigo;
     }
 
-    public void mostrarProducto() { //NO ES BUENA IDEA QUE EXISTA ESTE MÉTODO EN LA VIDA REAL!
-        System.out.println("Mostrando producto ...");
-        System.out.println("Nombre: " + this.nombre);
-        System.out.println("Precio: " + this.precio);
-        System.out.println("Codigo de Barra: " + this.codigoBarra);
-        System.out.println("Categoria: " + this.categoria);
-    }
-
     @Override
     public String toString() {
         String salida = "Producto {";
@@ -113,12 +93,6 @@ public class Producto {
         if ( otroProducto.nombre.equals(this.nombre) != true) {
             return false;
         }
-        /*
-        if ( !otroProducto.categoria.equals(this.categoria)) {
-            return false;
-        }
-        return true;
-        */
         return otroProducto.categoria.equals(this.categoria);
     }
 }
