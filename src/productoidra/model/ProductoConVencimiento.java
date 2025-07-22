@@ -1,8 +1,9 @@
 package productoidra.model;
+import java.time.LocalDate;
 
 public class ProductoConVencimiento extends Producto {
 
-    protected int fechaVencimiento;
+    protected LocalDate fechaVencimiento;
 
     public ProductoConVencimiento(String nombre) {
         super(nombre);
@@ -13,11 +14,11 @@ public class ProductoConVencimiento extends Producto {
         this.codigoBarra = 0L;
     }
 
-    public int getFechaVencimiento() {
+    public LocalDate getFechaVencimiento() {
         return this.fechaVencimiento;
     }
 
-    public void setFechaVencimiento(int fecha) {
+    public void setFechaVencimiento(LocalDate fecha) {
         //variable fechaVencimiento??
         this.fechaVencimiento = fecha;
     }
@@ -30,7 +31,11 @@ public class ProductoConVencimiento extends Producto {
     
     @Override
     public String toString() {
-        String salida = "ProductoConVencimiento {";
-        return salida;
+        return "ProductoConVencimiento {" +
+                "nombre: " + this.nombre + ", " +
+                "precio; " + this.precio + ", " +
+                "categoria: " + this.categoria + ", " +
+                "codigo_de_barra:" + this.codigoBarra + ", " +
+                "fechaVencimiento: "  + this.fechaVencimiento + "}";
     }
 }

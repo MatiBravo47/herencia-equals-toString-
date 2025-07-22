@@ -40,6 +40,9 @@ public class Producto {
     }
 
     public void setNombre(String newName) {
+        if (nombre == null || nombre.trim().isEmpty()){
+            throw new IllegalArgumentException("El nombre no puede estar vacio");
+        }
         this.nombre = newName;
     }
 
@@ -56,6 +59,9 @@ public class Producto {
     }
 
     public void setPrecio(float precio) {
+        if (precio < 0) {
+            throw new IllegalArgumentException("El precio no puede ser negativo");
+        }
         this.precio = precio;
     }
 
